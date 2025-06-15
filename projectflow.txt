@@ -39,7 +39,7 @@
     set: export MONGODB_URL="mongodb+srv://<username>:<password>......"
     check: echo $MONGODB_URL
                         *** For Powershell ***
-    set: $env:MONGODB_URL = "mongodb+srv://<username>:<password>......"
+    set: "
     check: echo $env:MONGODB_URL
 
     To setup the connection url on Windows, open env variable setting option and add a new variable:
@@ -103,7 +103,7 @@
         >> next >> create access key >> download csv
       * Now create one ECR repo to store/save docker image:
         AWS console >> Go to ECR >> Region: us-east-1 >> Hit create repository >>
-        repo name: vehicleproj >> hit create repository >> copy and keep uri
+        repo name: vehicleproj >> hit create repository >> copy and keep uri>>"944355516504.dkr.ecr.us-east-1.amazonaws.com/vehiclerepo"
       * Now create EC2 Ubuntu server >> AWS console >> EC2 >> Launch Instance >> name: vehicledata-machine
         >> Image: Ubuntu >> AMI: Ubuntu Server 24.04 (free tier) >> Instance: T2 Medium (~chargeable-3.5rs/hr)
         >> create new key pair (name: proj1key) >> allow for https and http traffic >> storage: 30gb >> Launch
